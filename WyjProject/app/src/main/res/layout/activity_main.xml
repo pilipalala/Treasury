@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_jPush"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="极光推送"
+        android:textSize="@dimen/dp_20" />
+
+    <Button
+        android:id="@+id/btn_aMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="高德地图"
+        android:textSize="@dimen/dp_20" />
+
+    <Button
+        android:id="@+id/btn_aShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="分享"
+        android:textSize="@dimen/dp_20" />
+
+    <Button
+        android:id="@+id/btn_aChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="聊天"
+        android:textSize="@dimen/dp_20" />
+    <Button
+        android:id="@+id/btn_toolbar"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToolBar"
+        android:textSize="@dimen/dp_20" />
+    <Button
+        android:id="@+id/btn_appbarLayout"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AppbarLayout"
+        android:textSize="@dimen/dp_20" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
