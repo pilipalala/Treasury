@@ -45,6 +45,13 @@
         android:layout_height="wrap_content"
         android:text="AppbarLayout"
         android:textSize="@dimen/dp_20" />
+    <Button
+        android:id="@+id/btn_tabLayout"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TabLayout"
+        android:textSize="@dimen/dp_20" />
 
     <TextView
         android:id="@+id/text"

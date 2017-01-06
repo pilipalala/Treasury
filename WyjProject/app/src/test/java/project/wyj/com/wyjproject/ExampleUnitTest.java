@@ -1,4 +1,4 @@
-package project.wyj.com.wyjproject;
+package project.com.umeng.wyjproject;
 
 import org.junit.Test;
 

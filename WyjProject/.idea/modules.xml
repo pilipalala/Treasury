@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WyjProject.iml" filepath="$PROJECT_DIR$/WyjProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/umeng_app/umeng_app.iml" filepath="$PROJECT_DIR$/umeng_app/umeng_app.iml" />
     </modules>
   </component>
 </project>

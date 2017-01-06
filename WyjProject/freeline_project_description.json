@@ -1,0 +1,96 @@
+{
+    "project_type": "gradle",
+    "android_gradle_plugin_version": "1.5.1",
+    "freeline_gradle_plugin_version": "0.8.4",
+    "java_home": "D:\\Program Files\\Java\\jdk1.8.0_05",
+    "freeline_cache_dir": "D:\\Wyj\\Treasury\\WyjProject",
+    "auto_dependency": true,
+    "product_flavor": "",
+    "build_script": "gradlew.bat :app:assembleDebug",
+    "build_script_work_directory": "",
+    "root_dir": "D:\\Wyj\\Treasury\\WyjProject",
+    "main_project_name": "app",
+    "main_project_dir": "app",
+    "build_directory": "D:\\Wyj\\Treasury\\WyjProject\\app\\build",
+    "build_cache_dir": "D:\\Wyj\\Treasury\\WyjProject\\app\\build\\freeline",
+    "build_tools_version": "24.0.1",
+    "sdk_directory": "D:\\Android\\sdk",
+    "build_tools_directory": "D:\\Android\\sdk\\build-tools\\24.0.1",
+    "compile_sdk_version": "android-24",
+    "compile_sdk_directory": "D:\\Android\\sdk\\platforms\\android-24",
+    "package": "project.wyj.com.wyjproject",
+    "debug_package": "project.wyj.com.wyjproject",
+    "main_manifest_path": "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\main\\AndroidManifest.xml",
+    "launcher": "project.wyj.com.wyjproject.MainActivity",
+    "apk_path": "D:\\Wyj\\Treasury\\WyjProject\\app\\build\\outputs\\apk\\app-debug.apk",
+    "extra_dep_res_paths": [
+        
+    ],
+    "exclude_dep_res_paths": [
+        
+    ],
+    "main_r_path": "D:\\Wyj\\Treasury\\WyjProject\\app\\build\\generated\\source\\r\\debug\\R.java",
+    "use_jdk8": false,
+    "main_src_directory": [
+        "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\debug\\java",
+        "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\main\\java"
+    ],
+    "main_res_directory": [
+        "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\debug\\res",
+        "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\main\\res"
+    ],
+    "main_assets_directory": [
+        "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\debug\\assets",
+        "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\main\\assets"
+    ],
+    "main_jni_directory": [
+        "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\debug\\jni",
+        "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\main\\jni"
+    ],
+    "main_jniLibs_directory": [
+        "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\debug\\jniLibs",
+        "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\main\\jniLibs"
+    ],
+    "project_source_sets": {
+        "app": {
+            "main_src_directory": [
+                "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\debug\\java",
+                "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\main\\java"
+            ],
+            "main_res_directory": [
+                "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\debug\\res",
+                "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\main\\res"
+            ],
+            "main_assets_directory": [
+                "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\debug\\assets",
+                "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\main\\assets"
+            ],
+            "main_jni_directory": [
+                "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\debug\\jni",
+                "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\main\\jni"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\debug\\jniLibs",
+                "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\main\\jniLibs"
+            ],
+            "main_manifest_path": "D:\\Wyj\\Treasury\\WyjProject\\app\\src\\main\\AndroidManifest.xml"
+        }
+    },
+    "modules": [
+        {
+            "name": "app",
+            "path": "D:\\Wyj\\Treasury\\WyjProject\\app"
+        }
+    ],
+    "module_dependencies": {
+        "app": [
+            
+        ]
+    },
+    "databinding": [
+        
+    ],
+    "databinding_modules": [
+        
+    ]
+}
