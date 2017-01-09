@@ -52,6 +52,7 @@
         android:icon="@mipmap/ic_logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme.NoActionBar"
+
         tools:replace="Android:icon, android:theme">
         <activity
             android:name=".MainActivity"
@@ -194,7 +195,7 @@
         <activity android:name=".materialdesign.activity.ToolBarActivity" />
         <activity android:name=".materialdesign.activity.AppBarLayoutActivity" />
         <activity android:name=".materialdesign.activity.TabLayoutActivity" />
-        <activity android:name=".share.ShareMainActivity" />
+        <activity android:name=".share.activity.ShareMainActivity" />
         <!-- 微信 -->
         <activity
             android:name=".wxapi.WXEntryActivity"
@@ -202,8 +203,8 @@
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <!--微信-end-->
-        <!--QQ-->
+        <!-- 微信-end -->
+        <!-- QQ -->
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
@@ -222,29 +223,35 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <!--QQ-end-->
-        <!--Sina-->
+        <!-- QQ-end -->
+        <!-- Sina -->
         <activity
             android:name=".WBShareActivity"
             android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
             android:configChanges="keyboardHidden|orientation"
-            android:windowSoftInputMode="adjustResize"
-            android:exported="false" >
-        </activity>
-        <!--Sina-end-->
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" />
+        <!-- Sina-end -->
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="561cae6ae0f55abd990035bf"></meta-data>
+            android:value="561cae6ae0f55abd990035bf" />
 
-        <activity android:name=".share.ShareDetailActivity"></activity>
+        <activity android:name=".share.activity.ShareDetailActivity" />
+        <activity android:name=".share.activity.ShareActivity" />
+        <activity android:name=".share.activity.ShareLoginActivity"/>
     </application>
 
 </manifest>

@@ -13,7 +13,7 @@ import com.umeng.soexample.jpush.JPushMainActivity;
 import com.umeng.soexample.materialdesign.activity.AppBarLayoutActivity;
 import com.umeng.soexample.materialdesign.activity.TabLayoutActivity;
 import com.umeng.soexample.materialdesign.activity.ToolBarActivity;
-import com.umeng.soexample.share.ShareMainActivity;
+import com.umeng.soexample.share.activity.ShareMainActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -78,5 +78,4 @@ public class MainActivity extends BaseActivity {
                 break;
         }
     }
-
 }
