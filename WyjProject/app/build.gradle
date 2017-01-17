@@ -3,11 +3,11 @@ apply plugin: 'android-apt'
 apply plugin: 'com.antfortune.freeline'
 
 android {
+
     compileSdkVersion 24
     buildToolsVersion '24.0.1'
-
     defaultConfig {
-        applicationId "com.umeng.soexample"
+        applicationId "com.umeng.soexample"//com.umeng.soexample
         minSdkVersion 19
         targetSdkVersion 24
         versionCode 1
@@ -19,17 +19,26 @@ android {
         }
 
         manifestPlaceholders = [
-                JPUSH_PKGNAME : applicationId,
+                JPUSH_PKGNAME: applicationId,
                 JPUSH_APPKEY : "0747ffe1510511e09c8f1fdf", //JPush上注册的包名对应的appkey.
-                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
         ]
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true          // 开启混淆
+            shrinkResources true        // 移除无用资源
+            zipAlignEnabled true        // 开启压缩
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-
+        /*signingConfigs {
+            debug {
+                keyAlias 'bangxiong.communityclient'
+                keyPassword '123456'
+                storeFile file('D:/jksnice/com.bangxiong.communityclient.jks')
+                storePassword '123456'
+            }
+        }*/
         signingConfigs {
             debug {
                 storeFile file('debug.keystore')
@@ -38,16 +47,14 @@ android {
                 keyPassword "android"
             }
         }
-
-
-    }
-    sourceSets{
-        main{
-            jniLibs.srcDirs = ['libs']
-        }
     }
     dexOptions {
         incremental true
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
     }
 }
 
@@ -59,9 +66,13 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:24.2.1'
     compile 'com.android.support:cardview-v7:24.2.1'
     compile 'cn.jiguang.sdk:jpush:3.0.0'
+    //极光推送
     compile 'cn.jiguang.sdk:jcore:1.0.0'
+    //极光推送
     compile 'com.jakewharton:butterknife:8.0.1'
+    //数据绑定：Butterknife,
     apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    //数据绑定：Butterknife,
     compile files('libs/AMap3DMap_4.1.3_AMapNavi_1.9.4_AMapSearch_3.6.1_AMapLocation_3.2.0_20161208.jar')
     compile 'com.jude:swipebackhelper:3.1.2'
     //滑动关闭
@@ -77,4 +88,11 @@ dependencies {
     compile files('libs/weiboSDKCore_3.1.4.jar')
     compile files('libs/SocialSDK_email.jar')
     compile files('libs/SocialSDK_sms.jar')
+    //图片缓存框架Glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    //OkHttp3框架
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    //fastjson框架
+    compile 'com.alibaba:fastjson:1.2.21'
 }

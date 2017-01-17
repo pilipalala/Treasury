@@ -1,4 +1,4 @@
-package project.com.umeng.wyjproject;
+package project.com.umeng.soexample;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

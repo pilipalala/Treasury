@@ -25,7 +25,7 @@ public class ShareLoginActivity extends BaseActivity {
     ShareLoginAdapter adapter;
     String[] titles = AppData.login_titles;
     int[] icons = AppData.login_icon;
-    private SHARE_MEDIA[] listMedia = {SHARE_MEDIA.WEIXIN, SHARE_MEDIA.QQ, SHARE_MEDIA.SINA};
+    private SHARE_MEDIA[] listMedia = {SHARE_MEDIA.WEIXIN, SHARE_MEDIA.QQ,SHARE_MEDIA.SINA};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +47,6 @@ public class ShareLoginActivity extends BaseActivity {
                 Toast.makeText(getApplicationContext(), "onRestoreInstanceState Authorize onError", Toast.LENGTH_SHORT).show();
                 adapter.notifyDataSetChanged();
             }
-
             @Override
             public void onCancel(SHARE_MEDIA platform, int action) {
                 Toast.makeText(getApplicationContext(), "onRestoreInstanceState Authorize onCancel", Toast.LENGTH_SHORT).show();
@@ -58,7 +57,6 @@ public class ShareLoginActivity extends BaseActivity {
 
 
     @Override
-
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         UMShareAPI.get(this).onActivityResult(requestCode, resultCode, data);

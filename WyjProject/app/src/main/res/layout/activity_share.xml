@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".share.activity.ShareActivity">
+    tools:context="com.umeng.soexample.share.activity.ShareActivity">
 
     <ListView
         android:id="@+id/list"

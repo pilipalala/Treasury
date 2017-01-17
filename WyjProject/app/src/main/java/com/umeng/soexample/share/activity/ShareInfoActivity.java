@@ -10,32 +10,32 @@ import com.umeng.soexample.backLayout.BaseActivity;
 import com.umeng.socialize.bean.SHARE_MEDIA;
 import com.umeng.soexample.R;
 import com.umeng.soexample.share.adapter.ShareAdapter;
-import com.umeng.soexample.utils.AppData;
 
 import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ShareActivity extends BaseActivity {
+public class ShareInfoActivity extends BaseActivity {
 
     @BindView(R.id.list)
     ListView list;
-    String[] titles = AppData.share_titles;
-    int[] icons = AppData.share_icon;
-    ArrayList<SHARE_MEDIA> share_media = new ArrayList<>();
+    String[] titles = {"微信", "QQ", "微博"};
+    int[] icons = {R.mipmap.icon_wechat, R.mipmap.icon_qq, R.mipmap.icon_sina};
+    private ArrayList<SHARE_MEDIA> share_media = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_share);
+        setContentView(R.layout.activity_share_info);
         ButterKnife.bind(this);
         initMedia();
         list.setAdapter(new ShareAdapter(this, titles, icons));
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                Intent intent = new Intent(ShareActivity.this, ShareDetailActivity.class);
+                Intent intent = new Intent(ShareInfoActivity.this, InfoDetailActivity.class);
                 intent.putExtra("type", share_media.get(position));
                 startActivity(intent);
             }
@@ -44,12 +44,7 @@ public class ShareActivity extends BaseActivity {
 
     private void initMedia() {
         share_media.add(SHARE_MEDIA.WEIXIN);
-        share_media.add(SHARE_MEDIA.WEIXIN_CIRCLE);
-        share_media.add(SHARE_MEDIA.WEIXIN_FAVORITE);
         share_media.add(SHARE_MEDIA.QQ);
-        share_media.add(SHARE_MEDIA.QZONE);
         share_media.add(SHARE_MEDIA.SINA);
-        share_media.add(SHARE_MEDIA.EMAIL);
-        share_media.add(SHARE_MEDIA.SMS);
     }
 }

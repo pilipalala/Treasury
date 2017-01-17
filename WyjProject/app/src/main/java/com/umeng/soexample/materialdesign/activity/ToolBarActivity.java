@@ -6,8 +6,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.umeng.soexample.R;
 import com.umeng.soexample.backLayout.BaseActivity;
+import com.umeng.soexample.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

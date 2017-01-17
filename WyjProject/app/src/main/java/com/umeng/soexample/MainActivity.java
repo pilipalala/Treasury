@@ -6,13 +6,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.jude.swipbackhelper.SwipeBackHelper;
 import com.umeng.soexample.backLayout.BaseActivity;
+import com.umeng.soexample.materialdesign.activity.ToolBarActivity;
+import com.umeng.soexample.object.ObjectActivity;
+import com.jude.swipbackhelper.SwipeBackHelper;
 import com.umeng.soexample.gaodemap.MapLocationActivity;
 import com.umeng.soexample.jpush.JPushMainActivity;
 import com.umeng.soexample.materialdesign.activity.AppBarLayoutActivity;
 import com.umeng.soexample.materialdesign.activity.TabLayoutActivity;
-import com.umeng.soexample.materialdesign.activity.ToolBarActivity;
 import com.umeng.soexample.share.activity.ShareMainActivity;
 
 import butterknife.BindView;
@@ -38,6 +39,8 @@ public class MainActivity extends BaseActivity {
     Button btnAppbarLayout;
     @BindView(R.id.btn_tabLayout)
     Button btnTabLayout;
+    @BindView(R.id.btn_object)
+    Button btnObject;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +56,7 @@ public class MainActivity extends BaseActivity {
     }
 
 
-    @OnClick({R.id.btn_jPush, R.id.btn_aMap, R.id.btn_aShare, R.id.btn_aChat, R.id.btn_toolbar, R.id.btn_appbarLayout,R.id.btn_tabLayout})
+    @OnClick({R.id.btn_jPush, R.id.btn_aMap, R.id.btn_aShare, R.id.btn_aChat, R.id.btn_toolbar, R.id.btn_appbarLayout, R.id.btn_tabLayout,R.id.btn_object})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_jPush:
@@ -75,6 +78,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.btn_tabLayout:
                 startActivity(new Intent(this, TabLayoutActivity.class));
+                break;
+            case R.id.btn_object:
+                startActivity(new Intent(this, ObjectActivity.class));
                 break;
         }
     }

@@ -52,6 +52,11 @@ public class ShareAdapter extends BaseAdapter {
         } else {
             holder = (ViewHolder) view.getTag();
         }
+        if (i == titles.length - 1) {
+            holder.divider.setVisibility(View.GONE);
+        } else {
+            holder.divider.setVisibility(View.VISIBLE);
+        }
         holder.name.setText(titles[i]);
         holder.adapterImage.setImageResource(icons[i]);
         return view;

@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.umeng.soexample.R;
 import com.umeng.soexample.backLayout.BaseActivity;
+import com.umeng.soexample.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -18,6 +18,8 @@ public class ShareMainActivity extends BaseActivity {
     Button btnShare;
     @BindView(R.id.btn_login)
     Button btnLogin;
+    @BindView(R.id.btn_info)
+    Button btnInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,7 @@ public class ShareMainActivity extends BaseActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_share, R.id.btn_login})
+    @OnClick({R.id.btn_share, R.id.btn_login,R.id.btn_info})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_share:
@@ -34,6 +36,9 @@ public class ShareMainActivity extends BaseActivity {
                 break;
             case R.id.btn_login:
                 startActivity(new Intent(this, ShareLoginActivity.class));
+                break;
+            case R.id.btn_info:
+                startActivity(new Intent(this, ShareInfoActivity.class));
                 break;
         }
     }

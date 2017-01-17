@@ -22,7 +22,7 @@
         android:id="@+id/btn_aShare"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="分享"
+        android:text="友盟"
         android:textSize="@dimen/dp_20" />
 
     <Button
@@ -51,6 +51,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TabLayout"
+        android:textSize="@dimen/dp_20" />
+    <Button
+        android:id="@+id/btn_object"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="项目"
         android:textSize="@dimen/dp_20" />
 
     <TextView

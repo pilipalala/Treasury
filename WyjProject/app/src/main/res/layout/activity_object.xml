@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/btn_share"
+        android:id="@+id/btn_jiugongge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="分享"
-        android:textSize="20sp" />
+        android:text="GridView单/多选"
+        android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_popwindow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="登陆"
-        android:textSize="20sp" />
-
+        android:text="PopWindow"
+        android:textAllCaps="false" />
     <Button
-        android:id="@+id/btn_info"
+        android:id="@+id/btn_itemdecoration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="信息"
-        android:textSize="20sp" />
+        android:text="吸顶效果"/>
 
 
 </LinearLayout>

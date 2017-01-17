@@ -14,8 +14,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.umeng.soexample.R;
 import com.umeng.soexample.backLayout.BaseActivity;
+import com.umeng.soexample.R;
 
 import cn.jpush.android.api.JPushInterface;
 
