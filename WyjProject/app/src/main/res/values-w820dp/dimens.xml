@@ -13,4 +13,5 @@
     <dimen name="sectioned_top">20dp</dimen>
     <dimen name="sectioned_alignBottom">5dp</dimen>
     <dimen name="dp_10">10dp</dimen>
+    <dimen name="sp_20">20sp</dimen>
 </resources>

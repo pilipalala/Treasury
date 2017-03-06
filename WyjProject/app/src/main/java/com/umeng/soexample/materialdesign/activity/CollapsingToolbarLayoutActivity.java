@@ -21,7 +21,15 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class AppBarLayoutActivity extends AppCompatActivity {
+
+/*注意：Toolbar 和CollapsingToolbarLayout 同时设置了title时，不会显示Toolbartitle而是显示CollapsingToolbarLayout 的title，如果要显示Toolbar 的title，你可一在代码中添加如下代码：
+
+collapsingToolbarLayout.setTitle("");
+*/
+
+
+
+public class CollapsingToolbarLayoutActivity extends AppCompatActivity {
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
@@ -38,7 +46,7 @@ public class AppBarLayoutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_app_bar_layout);
+        setContentView(R.layout.activity_callapsing_toolbar_layout);
         ButterKnife.bind(this);
 
         initToolBar();
@@ -62,16 +70,16 @@ public class AppBarLayoutActivity extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 int menuItemId = item.getItemId();
                 if (menuItemId == R.id.action_search) {
-                    Toast.makeText(AppBarLayoutActivity.this, "无线", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CollapsingToolbarLayoutActivity.this, "无线", Toast.LENGTH_SHORT).show();
 
                 } else if (menuItemId == R.id.action_notification) {
-                    Toast.makeText(AppBarLayoutActivity.this, "星星", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CollapsingToolbarLayoutActivity.this, "星星", Toast.LENGTH_SHORT).show();
 
                 } else if (menuItemId == R.id.action_item1) {
-                    Toast.makeText(AppBarLayoutActivity.this, "item_01", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CollapsingToolbarLayoutActivity.this, "item_01", Toast.LENGTH_SHORT).show();
 
                 } else if (menuItemId == R.id.action_item2) {
-                    Toast.makeText(AppBarLayoutActivity.this, "item_02", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CollapsingToolbarLayoutActivity.this, "item_02", Toast.LENGTH_SHORT).show();
 
                 }
                 return true;
@@ -81,7 +89,7 @@ public class AppBarLayoutActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
-                Toast.makeText(AppBarLayoutActivity.this, "返回", Toast.LENGTH_SHORT).show();
+                Toast.makeText(CollapsingToolbarLayoutActivity.this, "返回", Toast.LENGTH_SHORT).show();
             }
         });
     }

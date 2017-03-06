@@ -18,11 +18,24 @@
         android:layout_height="wrap_content"
         android:text="PopWindow"
         android:textAllCaps="false" />
+
     <Button
         android:id="@+id/btn_itemdecoration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="吸顶效果"/>
+        android:text="吸顶效果" />
+
+    <Button
+        android:id="@+id/btn_textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextInputLayout" />
+
+    <Button
+        android:id="@+id/btn_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecycleView下拉刷新上拉加载" />
 
 
 </LinearLayout>

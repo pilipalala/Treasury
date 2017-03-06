@@ -1,34 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:fitsSystemWindows="true">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        app:navigationIcon="@mipmap/back_white"
-        app:title="TabLayout实例"
-        app:titleTextColor="@android:color/white"></android.support.v7.widget.Toolbar>
+        android:layout_height="wrap_content">
 
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tablayout"
-        android:layout_width="match_parent"
-        app:tabIndicatorHeight="@dimen/dp_2"
-        app:tabIndicatorColor="@color/themeColor"
-        app:tabSelectedTextColor="@color/themeColor"
-        app:tabMode="scrollable"
-        app:tabGravity="fill"
-        android:layout_height="wrap_content"></android.support.design.widget.TabLayout>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_dark"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:navigationIcon="@mipmap/back_white"
+            app:titleTextColor="@android:color/white" />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/themeColor"
+            app:tabIndicatorHeight="@dimen/dp_2"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/themeColor" />
+    </android.support.design.widget.AppBarLayout>
+
+
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-    </android.support.v4.view.ViewPager>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@mipmap/icon_fav" />
 
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -31,33 +31,21 @@
         android:layout_height="wrap_content"
         android:text="聊天"
         android:textSize="@dimen/dp_20" />
+
     <Button
-        android:id="@+id/btn_toolbar"
-        android:textAllCaps="false"
+        android:id="@+id/btn_materialdesign"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ToolBar"
-        android:textSize="@dimen/dp_20" />
-    <Button
-        android:id="@+id/btn_appbarLayout"
+        android:text="Material Design"
         android:textAllCaps="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="AppbarLayout"
         android:textSize="@dimen/dp_20" />
-    <Button
-        android:id="@+id/btn_tabLayout"
-        android:textAllCaps="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TabLayout"
-        android:textSize="@dimen/dp_20" />
+
     <Button
         android:id="@+id/btn_object"
-        android:textAllCaps="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="项目"
+        android:textAllCaps="false"
         android:textSize="@dimen/dp_20" />
 
     <TextView
